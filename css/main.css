@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: #f5f5f5;
+    scroll-behavior: smooth;
+}
+
+/* =========== nav bar =========== */
+
+
+
+
+
+li a {
+    position: relative;
+    overflow: hidden;
+}
+
+li a::after {
+    transition: all 0.5s ease-in-out;
+    content: '';
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+
+/* =========== header =========== */
+
+#home {
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* =========== About =========== */
+
+
+.about {
+    padding-top: 50px;
+}
+
+.about h5::after {
+    content: '';
+    border: #0d6efd solid 1.5px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+
+
+
+/* =========== services =========== */
+
+
+.services .card-body .circle {
+    width: 120px;
+    height: 120px;
+    border: 7px #0078ff solid;
+    border-radius: 50%;
+    position: relative;
+}
+
+.services .card-body i {
+    font-size: 43px;
+    position: absolute;
+    left: 50%;
+    top: 33px;
+    transform: translatex(-50%);
+}
+
+.services .circle {
+    transition: all 1s;
+}
+
+
+.services .card-body:hover .circle {
+    border: 7px #CDE1F8 solid;
+    background-color: #0078ff;
+    color: white;
+}
+
+
+
+/* =========== Numbers =========== */
+
+#Numbrs {
+    background-image: url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.numbers .circle {
+    width: 120px;
+    height: 120px;
+    border: 7px #CDE1F8 solid;
+    border-radius: 50%;
+    position: relative;
+}
+
+.numbers i {
+    color: white;
+    font-size: 43px;
+    position: absolute;
+    left: 50%;
+    top: 33px;
+    transform: translatex(-50%);
+}
+
+
+/* =========== Portofolio =========== */
+
+.portfolio .workCard .card {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.workCard .card img {
+    transition: all 1s;
+}
+
+.workCard .card:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio .workCard i {
+    border: #0078ff solid 3px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+/* =========== Carasol =========== */
+
+
+.carasol,
+.contact {
+    background-image: linear-gradient(rgb(0, 120, 255, .7), rgb(0, 120, 255, .7)), url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* =========== Blog =========== */
+
+.blogCards .textlayer {
+    top: 0;
+    left: 50%;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+/* =========== Contact =========== */
+
+.contact h3::after {
+    content: '';
+    width: 100px;
+    /* height: 2px; */
+    color: #0d6efd;
+    border: #0d6efd solid 1.5px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+transform: ;
+
+}
+
+
+/* form button {
+    border: 2px solid #0d6efd;
+    border-radius: 50px;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px;
+
+} */
+
+/* .GetTouch .socials i::after {
+        content: '';
+        background-color: red;
+        border: solid 2px #0d6efd;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        transform: translateX(-50%);
+    } */
+
+.GetTouch .socialMedia i {
+    border: #0d6efd solid 3px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
